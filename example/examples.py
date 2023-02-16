@@ -9,10 +9,10 @@ RNA = pd.read_table('example_RNA.csv', sep=',', index_col=0)
 Meth = pd.read_table('example_Meth.csv', sep=',', index_col=0)
 
 # Import the necessary modules
-import Model
-import Process
-from utils import ClusterProcessor, do_km_plot
-from Survive_select import survive_select
+from ProgCAE import Model
+from ProgCAE import Process
+from ProgCAE.utils import ClusterProcessor, do_km_plot
+from ProgCAE.Survive_select import survive_select
 # Process the data
 CNV_processor = Process.DataProcessor(CNV)
 CNV = CNV_processor.sort_corr(2000)
