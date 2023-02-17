@@ -21,7 +21,7 @@ RNA = RNA_processor.sort_corr(5000)
 miRNA_processor = Process.DataProcessor(miRNA)
 miRNA = miRNA_processor.sort_corr(300)
 Meth_processor = Process.DataProcessor(Meth)
-MethV = Meth_processor.sort_corr(1000)
+Meth = Meth_processor.sort_corr(1000)
 
 # Build the models
 CNV_model = Model.ProgCAE(CNV.shape[1])
