@@ -1,12 +1,30 @@
 import pandas as pd
 import random
 random.seed(203)
+
+import argparse
+
+if __name__ == '__main__':
+    # Initialize the ArgumentParser object
+    parser = argparse.ArgumentParser()
+
+    # Add the required arguments to the ArgumentParser object
+    parser.add_argument('--path1', '-p1', type=str, required=True, help='The first omics file name.')
+    parser.add_argument('--path2', '-p2', type=str, required=True, help='The second omics file name.')
+    parser.add_argument('--path3', '-p3', type=str, required=True, help='The third omics file name.')
+    parser.add_argument('--path4', '-p4', type=str, required=True, help='The forth omics file name.')
+    parser.add_argument('--path5', '-p5', type=str, required=True, help='The survival file name.')
+
+    # Parse the arguments passed to the script
+    args = parser.parse_args()
+
+
 # Read in the data
-survive = pd.read_table('example_sur.csv', sep=',', index_col=0)
-CNV = pd.read_table('example_cnv.csv', sep=',', index_col=0)
-miRNA = pd.read_table('example_miRNA.csv', sep=',', index_col=0)
-RNA = pd.read_table('example_RNA.csv', sep=',', index_col=0)
-Meth = pd.read_table('example_Meth.csv', sep=',', index_col=0)
+survive = pd.read_table(args.path5, sep=',', index_col=0)
+CNV = pd.read_table(args.path1, sep=',', index_col=0)
+miRNA = pd.read_table(args.path2, sep=',', index_col=0)
+RNA = pd.read_table(args.path3, sep=',', index_col=0)
+Meth = pd.read_table(args.path4, sep=',', index_col=0)
 
 # Import the necessary modules
 from ProgCAE import Model
@@ -48,7 +66,7 @@ flatten = pd.concat([pd.DataFrame(CNV_feature),
                      pd.DataFrame(Meth_feature)], axis=1)
 SURVIVE_SELECT = survive_select(survive, flatten, 0.01)
 # Save the dataframe to a file
-flatten.to_csv('progcae_features.csv')
+flatten.to_csv('ProgCAE_features.csv')
 
 # Perform clustering and survival analysis
 
