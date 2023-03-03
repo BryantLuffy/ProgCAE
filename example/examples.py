@@ -48,7 +48,7 @@ flatten = pd.concat([pd.DataFrame(CNV_feature),
                      pd.DataFrame(Meth_feature)], axis=1)
 SURVIVE_SELECT = survive_select(survive, flatten, 0.01)
 # Save the dataframe to a file
-flatten.to_csv('progcae_features.csc')
+flatten.to_csv('progcae_features.csv')
 
 # Perform clustering and survival analysis
 
