@@ -12,7 +12,7 @@ ProgCAE can predict cancer subtypes with significant survival differences on 12 
 
 Dependencies
 -----
-ProgCAE is implemented in Python 3.9, which also requires the installation of keras, lifelines, numpy, pandas, scikit-learn, scipy tensorflow and other packages. Their specific versions are as follows.<br>
+ProgCAE is implemented in Python 3.9, which also requires the installation of keras, lifelines, numpy, pandas, scikit-learn, scipy, tensorflow and other packages. Their specific versions are as follows.<br>
 ### packages
 `keras`         `2.6.0`<br>
 `lifelines`     `0.27.2`<br>
