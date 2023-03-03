@@ -54,7 +54,7 @@ class ClusterProcessor:
 
             print("Number of clusters: ", i)
             print("Silhouette score: ", metrics.silhouette_score(self.data, estimator.labels_, metric='euclidean'))
-            print("P-values: ", pvalue.p_value)
+            print("P-value: ", pvalue.p_value)
 
 
 def do_km_plot(survive_data, pvalue, cindex, cancer_type, model_name):
