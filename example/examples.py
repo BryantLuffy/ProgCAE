@@ -1,8 +1,12 @@
 import pandas as pd
 import random
 random.seed(203)
-
+import os
+import warnings
+warnings.filterwarnings("ignore")
+os.environ["CUDA_VISIBLE_DEVICES"]="-1"
 import argparse
+
 
 if __name__ == '__main__':
     # Initialize the ArgumentParser object
