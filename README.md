@@ -1,2 +1,1 @@
-# ProgCAE 
-![](https://github.com/BryantLuffy/ProgCAE/blob/master/intro.png)
+# ProgCAE                     ![image](https://github.com/BryantLuffy/ProgCAE/blob/master/intro.png)
