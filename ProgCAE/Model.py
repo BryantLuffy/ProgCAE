@@ -26,18 +26,18 @@ class ProgCAE:
 
         Args:
             input_shape (int): The shape of the input data.
-            kernel_height1 (int): The height of the first convolutional layer's kernel. Default is 20.
-            kernel_height2 (int): The height of the second convolutional layer's kernel. Default is 10.
-            kernel_height3 (int): The height of the third convolutional layer's kernel. Default is 5.
-            stride1 (int): The stride of the first convolutional layer. Default is 10.
+            kernel_height1 (int): The height of the first convolutional layer's kernel. Default is 24.
+            kernel_height2 (int): The height of the second convolutional layer's kernel. Default is 12.
+            kernel_height3 (int): The height of the third convolutional layer's kernel. Default is 6.
+            stride1 (int): The stride of the first convolutional layer. Default is 5.
             stride2 (int): The stride of the second convolutional layer. Default is 5.
-            stride3 (int): The stride of the third convolutional layer. Default is 2.
+            stride3 (int): The stride of the third convolutional layer. Default is 4.
             filter1 (int): The number of filters in the first convolutional layer. Default is 32.
             filter2 (int): The number of filters in the second convolutional layer. Default is 64.
             filter3 (int): The number of filters in the third convolutional layer. Default is 128.
             hidden_dim (int): The dimension of the hidden layer. Default is 30.
             optimizer (tf.keras.optimizers): The optimizer for training the model. Default is Adam.
-            epochs (int): The number of epochs to train the model for. Default is 400.
+            epochs (int): The number of epochs to train the model for. Default is 500.
             batch_size (int): The batch size for training the model. Default is 32.
             validation_rate (float): The proportion of data to use for validation. Default is 0.2.
             learning_rate (float): The learning rate for the optimizer. Default is 0.0005.
