@@ -38,7 +38,7 @@ python Prog_CAE.py -p1 example/example_cnv.csv -p2 example/example_miRNA.csv -p3
 ```
 The program will take 2-3 minutes to run, and afterwards, you can obtain a survival feature matrix in CSV format and a KM curve graph (in TIFF format) when the number of clusters is 3 in the root directory.
 
-Data Acquisition:
+Data Acquisition
 -----
 To replicate our study, you can download multI-omics datasets for various types of cancer from the link provided below.
 
