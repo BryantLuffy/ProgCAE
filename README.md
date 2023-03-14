@@ -40,7 +40,7 @@ The program will take 2-3 minutes to run, and afterwards, you can obtain a survi
 
 Data Acquisition:
 -----
-To replicate our study, you can download multiple omics datasets for various types of cancer from the link provided below.
+To replicate our study, you can download multI-omics datasets for various types of cancer from the link provided below.
 
 | Cancer | Link |
 | :------: | :------ |
