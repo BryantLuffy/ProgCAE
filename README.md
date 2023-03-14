@@ -38,3 +38,22 @@ python Prog_CAE.py -p1 example/example_cnv.csv -p2 example/example_miRNA.csv -p3
 ```
 The program will take 2-3 minutes to run, and afterwards, you can obtain a survival feature matrix in CSV format and a KM curve graph (in TIFF format) when the number of clusters is 3 in the root directory.
 
+Data Acquisition:
+-----
+To replicate our study, you can download multiple omics datasets for various types of cancer from the link provided below.
+
+| Cancer | Link |
+| :------: | :------ |
+| ACC | https://xenabrowser.net/datapages/?cohort=TCGA%20Adrenocortical%20Cancer%20(ACC)&removeHub=https%3A%2F%2Fxena.treehouse.gi.ucsc.edu%3A443 |
+| BLCA | https://xenabrowser.net/datapages/?cohort=TCGA%20Bladder%20Cancer%20(BLCA)&removeHub=https%3A%2F%2Fxena.treehouse.gi.ucsc.edu%3A443 |
+| BRCA | https://xenabrowser.net/datapages/?cohort=TCGA%20Breast%20Cancer%20(BRCA)&removeHub=https%3A%2F%2Fxena.treehouse.gi.ucsc.edu%3A443 |
+| COAD | https://xenabrowser.net/datapages/?cohort=TCGA%20Colon%20Cancer%20(COAD)&removeHub=https%3A%2F%2Fxena.treehouse.gi.ucsc.edu%3A443 |
+| GBM | https://xenabrowser.net/datapages/?cohort=TCGA%20Glioblastoma%20(GBM)&removeHub=https%3A%2F%2Fxena.treehouse.gi.ucsc.edu%3A443 |
+| LUAD | https://xenabrowser.net/datapages/?cohort=TCGA%20Lung%20Adenocarcinoma%20(LUAD)&removeHub=https%3A%2F%2Fxena.treehouse.gi.ucsc.edu%3A443 |
+| LUNG | https://xenabrowser.net/datapages/?cohort=TCGA%20Lung%20Cancer%20(LUNG)&removeHub=https%3A%2F%2Fxena.treehouse.gi.ucsc.edu%3A443 |
+| LUSC | https://xenabrowser.net/datapages/?cohort=TCGA%20Lung%20Squamous%20Cell%20Carcinoma%20(LUSC)&removeHub=https%3A%2F%2Fxena.treehouse.gi.ucsc.edu%3A443 |
+| PRAD | https://xenabrowser.net/datapages/?cohort=TCGA%20Prostate%20Cancer%20(PRAD)&removeHub=https%3A%2F%2Fxena.treehouse.gi.ucsc.edu%3A443 |
+| STAD | https://xenabrowser.net/datapages/?cohort=TCGA%20Stomach%20Cancer%20(STAD)&removeHub=https%3A%2F%2Fxena.treehouse.gi.ucsc.edu%3A443 |
+| SARC | https://xenabrowser.net/datapages/?cohort=TCGA%20Sarcoma%20(SARC)&removeHub=https%3A%2F%2Fxena.treehouse.gi.ucsc.edu%3A443 |
+| THCA | https://xenabrowser.net/datapages/?cohort=TCGA%20Thyroid%20Cancer%20(THCA)&removeHub=https%3A%2F%2Fxena.treehouse.gi.ucsc.edu%3A443 |
+
