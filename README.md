@@ -36,7 +36,7 @@ Taking the example data as an example, after you have downloaded the project fil
 ```
 python Prog_CAE.py -p1 example/example_cnv.csv -p2 example/example_miRNA.csv -p3 example/example_RNA.csv -p4 example/example_Meth.csv -p5 example/example_sur.csv
 ```
-The program will take 2-3 minutes to run, and afterwards, you can obtain a survival feature matrix in CSV format and a KM curve graph (in TIFF format) when the number of clusters is 3 in the root directory.
+The program will take about ten minutes to run, and afterwards, you can obtain a survival feature matrix in CSV format and a KM curve graph (in TIFF format) when the number of clusters is 3 in the root directory.
 
 Data Acquisition
 -----
