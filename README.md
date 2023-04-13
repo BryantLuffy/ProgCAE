@@ -45,7 +45,7 @@ python run_models.py
 
 Data Acquisition
 -----
-To replicate our study, you can download multI-omics datasets for various types of cancer from the links provided below.
+To replicate our study, you can download multi-omics datasets for various types of cancer from the links provided below.
 
 | Cancer | Link |
 | :------: | :------ |
