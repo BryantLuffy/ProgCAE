@@ -16,7 +16,7 @@ class ProgCAE:
             filter3=128,
             hidden_dim=30,
             optimizer=tf.keras.optimizers.Adam,
-            epochs=500,
+            epochs=300,
             batch_size=32,
             validation_rate=0.2,
             learning_rate=0.0005
@@ -37,7 +37,7 @@ class ProgCAE:
             filter3 (int): The number of filters in the third convolutional layer. Default is 128.
             hidden_dim (int): The dimension of the hidden layer. Default is 30.
             optimizer (tf.keras.optimizers): The optimizer for training the model. Default is Adam.
-            epochs (int): The number of epochs to train the model for. Default is 500.
+            epochs (int): The number of epochs to train the model for. Default is 300.
             batch_size (int): The batch size for training the model. Default is 32.
             validation_rate (float): The proportion of data to use for validation. Default is 0.2.
             learning_rate (float): The learning rate for the optimizer. Default is 0.0005.
