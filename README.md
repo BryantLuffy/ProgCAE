@@ -40,7 +40,7 @@ The program will take about ten minutes to run, and afterwards, you can obtain a
 
 For the example data, we saved the trained models and placed them in the models folder, so in order to get the running results faster, you can run the following program.
 ```
-python run_models.py
+python run_models.py -p1 example/example_cnv.csv -p2 example/example_miRNA.csv -p3 example/example_RNA.csv -p4 example/example_Meth.csv -p5 example/example_sur.csv
 ```
 
 Data Acquisition
