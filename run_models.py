@@ -9,6 +9,8 @@ import pandas as pd
 from ProgCAE import Process
 from ProgCAE.utils import ClusterProcessor, do_km_plot
 from ProgCAE.Survive_select import survive_select
+import argparse
+
 
 
 def extract_feature(model, x):
@@ -20,12 +22,27 @@ def extract_feature(model, x):
     return f(x)
 
 
+if __name__ == '__main__':
+    # Initialize the ArgumentParser object
+    parser = argparse.ArgumentParser()
+
+    # Add the required arguments to the ArgumentParser object
+    parser.add_argument('--path1', '-p1', type=str, required=True, help='The first omics file name.')
+    parser.add_argument('--path2', '-p2', type=str, required=True, help='The second omics file name.')
+    parser.add_argument('--path3', '-p3', type=str, required=True, help='The third omics file name.')
+    parser.add_argument('--path4', '-p4', type=str, required=True, help='The forth omics file name.')
+    parser.add_argument('--path5', '-p5', type=str, required=True, help='The survival file name.')
+
+    # Parse the arguments passed to the script
+    args = parser.parse_args()
+
+
 # Read in the data
-survive = pd.read_table('example/example_sur.csv', sep=',', index_col=0)
-CNV = pd.read_table('example/example_cnv.csv', sep=',', index_col=0)
-miRNA = pd.read_table('example/example_miRNA.csv', sep=',', index_col=0)
-RNA = pd.read_table('example/example_RNA.csv', sep=',', index_col=0)
-Meth = pd.read_table('example/example_Meth.csv', sep=',', index_col=0)
+survive = pd.read_table(args.path5, sep=',', index_col=0)
+CNV = pd.read_table(args.path1, sep=',', index_col=0)
+miRNA = pd.read_table(args.path2, sep=',', index_col=0)
+RNA = pd.read_table(args.path3, sep=',', index_col=0)
+Meth = pd.read_table(args.path4, sep=',', index_col=0)
 
 # load models
 CNV_model = tf.keras.models.load_model('models/cnv_model.h5')
